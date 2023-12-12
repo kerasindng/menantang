@@ -19,8 +19,7 @@ WORKDIR /app
 COPY . .
 
 # Install Python dependencies
-
-
+RUN pip3 install flask flask_restful
 # Run the fetch script
 RUN python3 fetch.py
 
